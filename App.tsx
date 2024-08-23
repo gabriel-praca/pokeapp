@@ -4,6 +4,10 @@ import { StyleSheet, Text, View, SafeAreaView, FlatList, Image } from 'react-nat
 
 const DATA = require('./data/pokedex.json');
 
+function getAllPokemon(): number {
+    return new Date().getTime();
+}
+
 const PokemonCard = ({ pokemon }) => (
     <View style={styles.item}>
         <View>
